@@ -6,10 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barista</title>
   <link rel="stylesheet" href="/css/main.css">
+
   <!-- css-link review section -->
    <link rel="stylesheet" href="/css/review.css">
   <!-- cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+  <link rel="stylesheet" href="/css/contact.css">
+
+  <link rel="stylesheet" href="css/our-menu.css">
+
+
 </head>
 
 <body>
@@ -21,23 +29,136 @@
   <!-- main content -->
   <main>
 
-    <!-- start here -->
+  <!-- start here -->
+  
+  <!--start about  -->
+  <!--end about  -->
 
-    <!--start about  -->
-    <!--end about  -->
-
-    <!--start our-menu  -->
-    <!--end our-menu   -->
-
-    <!--start review  -->
-    <section id="review">
-      <div class="main-title">
+  <!--start our-menu  -->
+  <section class="our-menu">
+    <div class="container our-menu-grid">
+      <div class="favourite-menu menu-block-wrap">
+        <div class="our-menu-title"> 
+          <span>Delicious Menu </span>
+          <h4>Breakfast</h4>
+        </div>
+        <div class="menu-block block1">
+          <div class="menu-block-text">
+            <h6>Pancakes</h6>
+            <strong>$12.50</strong>
+          </div>
+        <div class="border-top">
+          <small>Fresh brewed coffee and steamed milk</small>
+        </div>
+      </div>
+      <div class="menu-block block2">
+        <div class="menu-block-text">
+          <h6>Toasted Waffle</h6>
+          <strong> <strong class="discount">$16.50</strong> $12.00</strong>
+        </div>
+      <div class="border-top">
+        <small>Brewed coffee and steamed milk</small>
+      </div>
+    </div>
+      
+      <div class="menu-block block3">
+        <div class="menu-block-text">
+          <h6>Fried Chips
+            <span class="recomended">
+ 
+              Recommend</span>
+          </h6>
+          <strong>$15.0</strong>
+        </div>
+      <div class="border-top">
+        <small>Rich Milk and Foam</small>
+      </div>
+    </div>
+    <div class="menu-block block4">
+      <div class="menu-block-text">
+        <h6>Pancakes</h6>
+        <strong>$12.50</strong>
+      </div>
+    <div class="border-top">
+      <small>Fresh brewed coffee and steamed milk</small>
+    </div>
+  </div>
+  <div class="menu-block block5">
+    <div class="menu-block-text">
+      <h6>Banana Cakes</h6>
+      <strong>$18.0</strong>
+    </div>
+  <div class="border-top">
+    <small>Rich Milk and Foam</small>
+  </div>
+</div>
+      </div>
+      <div class="delicious-menu menu-block-wrap">
+        <div class="our-menu-title"> 
+          <span>Favourite Menu</span>
+          <h4>Coffee</h4>
+        </div>
+        <div class="menu-block block1">
+          <div class="menu-block-text">
+            <h6>Latte</h6>
+            <strong><strong class="discount">$12.50</strong>$7.50</strong>
+          </div>
+        <div class="border-top">
+          <small>Fresh brewed coffee and steamed milk</small>
+        </div>
+      </div>
+      <div class="menu-block block2">
+        <div class="menu-block-text">
+          <h6>
+            White Coffee
+            <span class="recomended"> Recommend</span>
+          </h6>
+          <strong>$5.90</strong>
+        </div>
+      <div class="border-top">
+        <small>Brewed coffee and steamed milk</small>
+      </div>
+    </div>
+      <div class="menu-block block3">
+        <div class="menu-block-text">
+          <h6> Chocolate Milk</h6>
+          <strong>$5.50</strong>
+        </div>
+      <div class="border-top">
+        <small>Rich Milk and Foam</small>
+      </div>
+    </div>
+    <div class="menu-block block4">
+      <div class="menu-block-text">
+        <h6>Greentea</h6>
+        <strong>$7.50</strong>
+      </div>
+    <div class="border-top">
+      <small>Fresh brewed coffee and steamed milk</small>
+    </div>
+  </div>
+  <div class="menu-block block5">
+    <div class="menu-block-text">
+      <h6>Dark Chocolate</h6>
+      <strong>$7.25</strong>
+    </div>
+  <div class="border-top">
+    <small>Rich Milk and Foam</small>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+  <!--end our-menu   -->
+  
+  <!--start review  -->
+  <section id="review">
+    <div class="main-title">
         <em>Reviews by Customers</em>
         <h2>Testimonials</h2>
       </div>
         <div class="container-Testimonials">
-
-          <div class="box left">
+           <div class="box left">
             <div class="person-info">
               <img src="./images/review-img-1.jpg" alt="sandra-img">
               <h3>Sandra <em>Customers</em></h3>
@@ -127,9 +248,52 @@
 
     <!-- main content -->
   </main>
-  <!-- start here -->
+    <!-- main content -->
 
+  <!-- start contact  -->
+<section id="contact" class="contact">
+  <div class="container">
+  <div class="contact-title">
+    <em>Say Hello</em>
+    <h2>Contact</h2>
+  </div>
+    <div class="contact-info">
+      <div class="contact-form">
+        <form>
+          <div class="inputs">
+           <div class="input">
+            <label for="name">Name <sup>*</sup></label>
+            <input type="text" id="name" name="name" placeholder="Jackson" required>
+           </div>
+          <div class="input">
+            <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Jack@gmail.com" required>
+          </div>
+          </div>
+       <div class="message">
+        <label for="message">How we can help?</label>
+        <textarea id="message" name="message" rows="4" placeholder="Message"  ></textarea>
+       </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15086.053640876162!2d72.81211623807383!3d19.041151615681947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9df637c9fcb%3A0x58c5096bf6f8ee0a!2sMumbai%20Maiden!5e0!3m2!1sen!2sso!4v1726758965252!5m2!1sen!2sso"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          
+        </iframe>
+  
+      </div>
+    </div>
+  </div>
+
+</section>
+
+  <!--end contact   -->
+</main>
+<!-- start here -->
+ 
   <!--start contact  -->
+  
 
   <!--end contact   -->
 
