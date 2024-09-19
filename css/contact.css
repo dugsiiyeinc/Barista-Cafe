@@ -1,0 +1,180 @@
+.contact{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(188, 108, 37, 1)), url('https://www.tooplate.com/templates/2137_barista_cafe/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact .container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 2rem;
+ }
+ .contact .container  em{
+   font-size: italic;
+   font-weight: 300;
+
+}
+.contact .container  h2{
+   font-size:3rem;
+   font-weight:800;
+}
+ .contact .container .contact-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+ }
+
+.contact .container .contact-form{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+     gap:1rem;
+     
+ }
+
+ .contact-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    
+ }
+ .contact-form form label{
+     color:#fff;
+     font-style: italic;
+      
+ }
+ .contact-form form label sup{
+     color:#ff0000;
+ }
+ .contact-form form .inputs{
+    width:100%;
+    display: flex;
+    gap:2rem;
+ }
+ .contact-form form .inputs .input{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+ }
+ .contact-form form .inputs .input input{
+    width:100%;
+    padding:1rem;
+    border: 1px solid #fff;
+   outline: none;
+    border-radius:5px;
+     background-color:transparent;
+    
+ }
+ .contact-form form  .message{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+  }
+ .contact-form form .inputs .input input:hover, .contact-form form .message textarea:hover{
+    background-color:#bc6c25;
+    border:none
+ }
+ 
+ .contact-form form ::placeholder{
+    color:#fff;
+  }
+  .contact-form form .message textarea{
+    width:100%;
+    height:120px;
+    padding:1rem;
+    border: 1px solid #fff;
+    outline:none;
+    border-radius:5px;
+    background-color:transparent;
+   }
+
+   .contact-form form button{
+    width:220px;
+    height:50px;  
+    display:flex ;
+    justify-content:center;
+    align-items:center; 
+    padding:1rem;
+    background-color:#bc6c25;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#fff;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition: background-color 0.5s ease;
+   }
+.contact-form form button:hover{
+    background-color:#fff;
+    color:#bc6c25;
+}
+.container .map{
+width:50%;
+height:100%;
+display:flex;
+background-color: #fff;
+justify-content:center;
+align-items:center;
+ border-radius:20px;
+ 
+}
+.container .map iframe{
+    width:100%;
+    height:300px;
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    filter:grayscale(100%);
+    border-radius:20px;
+    cursor:pointer;  
+ }
+ 
+
+ /* RESPONSIVE */
+ @media  (max-width: 768px){
+
+   .contact{
+      width:100%;
+      height:100%;
+      padding:50px 0;
+    }
+    .contact .container .contact-info{
+       width:100%;
+       flex-direction: column;
+        gap:2rem;
+     }
+    
+    .contact .container .contact-form{
+        width:100%;
+        height:100%;
+     }
+     .contact-form form .inputs{
+       flex-direction:column;
+   }
+    .container .map{
+        width:100%;
+     }
+
+ }
+ 
+ /* END RESPONSIVE */
+
+  
+
+
+ 
