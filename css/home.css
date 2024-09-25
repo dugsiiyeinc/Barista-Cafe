@@ -1,0 +1,276 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    scroll-behavior: smooth; 
+}
+  
+#main-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: 120% 120%;   
+    background-position: center center;
+    background-repeat: no-repeat; 
+    transition: background-size 6s ease-in-out;
+}
+  
+  
+
+#barista-logo-image {
+    background-color: transparent;
+    mix-blend-mode: multiply;
+    border: transparent;
+}
+
+
+#nav-flex-container {
+    background-color: #00000059;
+    width: 85%;
+    height: 8.33%;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-radius: 15px;
+    position: sticky;
+    transition: height 0.3s ease; 
+    flex-wrap: wrap; 
+}
+
+#left-side-navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#barista-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+    font-size: 28px;
+}
+
+
+#list-item-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+
+}
+
+#list-item-container a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#reservation {
+    color: white;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+#reservation:hover {
+    color: #dda15e;
+    background-color: white;
+    border-color: white;
+}
+
+.rightnav-font-style {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;  
+}
+
+#list-item-container .hover-effect:hover{
+    color: #dda15e;
+}
+
+
+#right-side-navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+
+#welcome-container {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 91.67%;
+}
+
+#tilted-box {
+    background-color: #00000059;
+    width: 100%;
+    height: 350px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+#higher-index {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 30%;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+}
+
+#higher-index em{
+    color: #dda15e;
+
+}
+
+#higher-index h1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 68px;
+}
+
+#higher-index p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#nested-welcome-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#nested-welcome-container a {
+    color: white;
+    text-decoration: none;
+}
+
+#ourStory:hover {
+    background-color: white;
+    color: #dda15e;
+    padding: 12px 28px;
+    border-radius: 25px;
+}
+
+#checkMenu {
+    color: white;
+    background-color: #dda15e;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 12px 28px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+
+
+
+
+#burger-menu {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.burger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 992px) {
+    #main-container {
+        background-size: 150% 150%; 
+        background-position: center center; 
+    }
+    
+    #nav-flex-container {
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;
+        position: relative;
+    }
+
+    
+    #burger-menu {
+        display: flex; 
+        margin-left: auto; 
+    }
+
+    
+    #list-item-container {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        text-align: left;
+        gap: 15px;
+        margin-top: 20px; 
+    }
+
+    
+    #burger-menu.active + #list-item-container {
+        display: flex; 
+        flex-direction: column; 
+        width: 100%;
+        background-color: #00000059; 
+        margin-top: 10px; 
+    }
+
+  
+    #nav-flex-container .nav-item {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    
+    #burger-menu.active .burger-bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #burger-menu.active .burger-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #burger-menu.active .burger-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    #higher-index h1 {
+        font-size: 38px;
+    }
+
+    #ourStory, #checkMenu {
+        font-size: 14px;
+    }
+
+    em, h1, p, strong, a {
+        white-space: nowrap; 
+    }
+}
+
+

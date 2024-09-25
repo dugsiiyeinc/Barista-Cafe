@@ -17,13 +17,70 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="css/our-menu.css">
   <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/home.css">
 
 </head>
 
 <body>
 
   <!--start home  -->
-  <!-- start here -->
+  <section id="main-container">
+        <!-- Navbar section starts here-->
+        <section id="nav-flex-container">
+            <!-- Left side navbar  in the below -->
+            <div id="left-side-navbar" class="nav-item">
+                <img src="./barista-logo.png" alt="" id="barista-logo-image" height="48px" width="48px">  
+                <h2 id="barista-text">Barista</h2>
+            </div> 
+            <!-- Right side navbar in the below  -->
+            <div id="right-side-navbar" class="nav-item">
+
+                <div id="burger-menu" class="burger">
+                    <!-- This is the burger icon -->
+                    <div class="burger-bar"></div>
+                    <div class="burger-bar"></div>
+                    <div class="burger-bar"></div>
+                </div>
+
+                <ul id="list-item-container">
+                    <li class="rightnav-font-style"><a href="Home" class="hover-effect">Home</a></li>
+                    <li class="rightnav-font-style"><a href="About" class="hover-effect">About</a></li>
+                    <li class="rightnav-font-style"><a href="Our Menu" class="hover-effect">Our Manu</a></li>
+                    <li class="rightnav-font-style"><a href="Riviews" class="hover-effect">Riviews</a></li>
+                    <li class="rightnav-font-style"><a href="Contact" class="hover-effect">Contact</a></li>
+                    <li>
+                        <a href="Reservation.html" class="rightnav-font-style" id="reservation">
+                            Reservation
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" 
+                                width="15" height="17">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </section>
+        <!-- Navbar section ends here -->
+
+        <!-- Home section starts here  -->
+        <div id="welcome-container">
+            <div id="tilted-box" class="welcome-item">
+            </div>
+            <div id="higher-index" class="welcome-item">
+                <em class="nested-welcome-item rightnav-font-style" >Welcome to Barista.com</em>
+                <h1 class="nested-welcome-item">Cafe Klang</h1>
+                <p class="nested-welcome-item">your favourite coffee daily lives.</p>
+                <div class="nested-welcome-item" id="nested-welcome-container">
+                    <a href="Our Story" class="two-link-item rightnav-font-style" id="ourStory">Our Story</a>
+                    <a href="Check Menu" class="two-link-item rightnav-font-style" id="checkMenu"><strong>Check Menu</strong></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
   <!--end home  -->
 
   <!-- main content -->
@@ -440,7 +497,8 @@
    </footer>
 
   <!--end footer   -->
-
+  <script src="./background.js"></script>
+  <script src="./burger.js"></script>
 </body>
 
 </html>
