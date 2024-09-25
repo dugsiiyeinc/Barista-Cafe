@@ -116,6 +116,7 @@
     background-repeat: no-repeat;
    height: 391px;
     border-radius: 20px;
+    transition: 0.5s ease-in-out;
 }
 .col .image2 {
     background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),url("/images/baristas2.jpg");;
@@ -124,6 +125,7 @@
     background-repeat: no-repeat;
     height: 391px;
     border-radius: 20px;
+    transition: 0.5s ease-in-out;
 }
 .col .image3 {
     background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),url("/images/baristas3.jpg");;
@@ -132,6 +134,8 @@
     background-repeat: no-repeat;
     height: 391px;
     border-radius: 20px;
+    transition: 0.5s ease-in-out;
+
 }
 .col .image4{
     background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),url("/images/baristas4.jpg");;
@@ -140,10 +144,12 @@
     background-repeat: no-repeat;
     height: 391px;
     border-radius: 20px;
+    transition: 0.5s ease-in-out;
+
 }
 
 
-.person-info {
+.rows .person-info {
     color: #fff;
     position: absolute;
     top: 250px;
