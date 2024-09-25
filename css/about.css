@@ -1,0 +1,194 @@
+/* img{
+ width: 100%;
+    border-radius: 20px;
+    height: auto;
+   
+} */
+.about-section{
+    background-color: #5a4024;
+   
+}
+.row{
+    display: flex;
+    gap: 4rem;
+    padding-block: 3rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+.row .col-1{
+    position: relative;
+}
+.col-1 , .col-2{
+    flex: 1;
+}
+.overlay{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+}
+.vedio video{
+   /* width: 450px; */
+   width: 100%;
+   max-width: 100%;
+   height: 450px;
+   object-fit: cover;
+   border-radius: 20px;
+}
+
+
+.about-vedio-info{
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.col-2 .text{
+    /* width:475px ;
+    height: 396px; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: self-start;
+}
+.text span{
+    font-style: italic;
+}
+.text h2 {
+    font-size: 3rem;
+}
+.col-2 .text p{
+    font-size:20px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+} 
+
+.col-2 .text .btn{
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px; 
+}
+.col-2 .text .btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.col-2 .text .btn:hover{
+    background-color: #fff;
+    color: #DDA15E;
+}
+.baristas-section{
+    background-color:  #b78752;
+    padding-block: 2rem;
+}
+.barista-title{
+   text-align: center;
+   padding-bottom: 3rem;
+   color: #fff;
+}
+.barista-title span{
+    font-style: italic;
+}
+.barista-title h2{
+   font-size: 3rem;
+}
+.baristas-section .rows{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+
+}
+
+.baristas-section .col{
+  
+    position: relative;
+}
+.col .image1 {
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),url("/images/baristas1.jpg");;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   height: 391px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+.col .image2 {
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),url("/images/baristas2.jpg");;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 391px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+.col .image3 {
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),url("/images/baristas3.jpg");;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 391px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+
+}
+.col .image4{
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1)),url("/images/baristas4.jpg");;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 391px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+
+}
+
+
+.rows .person-info {
+    color: #fff;
+    position: absolute;
+    top: 250px;
+    left:20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.person-info h4{
+    margin-bottom: 1rem;
+}
+.person-info p {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1024px){
+  .about-section .row{
+    flex-direction: column;
+ 
+  }
+  .vedio video{
+    width: 696px;
+    height: 696px;
+
+  }
+  .baristas-section .rows{
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
+@media (max-width:767px) {
+    .baristas-section .rows{
+        grid-template-columns: repeat(1,1fr);
+      }
+    
+}

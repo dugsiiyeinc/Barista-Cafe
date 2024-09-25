@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+:root {
+  --white-color: #ffffff;
+  --primary-color: #bc6c25;
+  --secondary-color: #f65129;
+  --section-bg-color: #f9f9f9;
+  --custom-btn-bg-color: #00a05d;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #e9eaeb;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+}
+/* header.design.css start*/
+
+header {
+  /* background-color: var(--white-color); */
+  transition: all 0.3s;
+  /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); */
+  height: 72px;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  background: #bc6c25 !important;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .herder_logo {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header nav .herder_logo > img {
+    filter: brightness(0) invert(1);
+}
+header nav .herder_logo > h1{
+    color: white;
+}
+
+header nav .herder_logo > a > .green-color {
+  color: var(--custom-btn-bg-color);
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  /* gap: 2rem; */
+}
+header nav ul li a {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: var(--white-color);
+  font-weight: 500;
+  height: 72px;
+  transition: 0.3s ease-in-out;
+  padding: 20px 27px;
+}
+header nav ul li a:hover {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+/* header nav ul li a.active {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+} */
+header .mobileScreen {
+  display: none;
+}
+#menu-toggle {
+  display: none;
+}
+/* header.design.css end*/
+
+/* hero.design start */
+.hero{
+    height: 100vh;
+}
+#bg-image {
+  max-width: 100%;
+  height: calc(150vh + 300px);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-image: url("/images/img-2.jpg");
+  transition: background-image 2s ease-in-out;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('your-background-image.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+
+
+.all h4, .all p, .btn {
+    z-index: 2; /* Place content above overlay */
+}
+
+.all h4 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.all p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #c27c42;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8a552e;
+}
+
+/* Make sure content stays responsive */
+@media (max-width: 768px) {
+    .all h4 {
+        font-size: 2rem;
+    }
+    
+    .all p {
+        font-size: 1.2rem;
+    }
+    
+    button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* hero.design end */
+
+/* responsive design  */
+@media (max-width: 1200px) {
+  #bg-image .all .card .box {
+    width: 48% !important;
+  }
+}
+@media (max-width: 992px) {
+  header nav ul {
+    display: none;
+  }
+  #menu-toggle {
+    display: block;
+  }
+  header nav > #menu-toggle #icon {
+    font-size: 1.55rem;
+    color: var(--dark-color);
+    transition: all 0.9s ease-in-out;
+  }
+  header .mobileScreen {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: var(--white-color);
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+  }
+  header .mobileScreen .container ul {
+    display: flex;
+    flex-direction: column;
+    /* gap: 26px;  */
+  }
+  /* Initially hide the menu */
+  .hidden {
+    display: none !important;
+  }
+  /* Show menu when toggled */
+  .show {
+    display: block !important;
+  }
+  header .mobileScreen .container ul li a {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--p-color);
+    font-weight: 500;
+    height: 72px;
+    transition: 0.3s ease-in-out;
+    padding: 20px 27px;
+    width: max-content;
+  }
+
+  header .mobileScreen .container ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+  header .mobileScreen .container ul li a.active {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+  }
+
+  #bg-image .all .card .box {
+    width: 100% !important;
+  }
+  #bg-image .all h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* responsive design  */
