@@ -1,0 +1,449 @@
+.booking-section {
+  width: 100%;
+  min-height: 1000px;
+  background: url('https://www.tooplate.com/templates/2137_barista_cafe/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .reservation {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation .booking-form {
+  width: 55%;
+  /* height: auto; */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem;
+   border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.booking-form .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.title em {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.title h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.booking-form form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.booking-form form .booking-input-top {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.booking-form form .booking-input-top input {
+  width: 200px;
+  height: 50px;
+  padding: 12px;
+  border: 1px solid #717275;
+  outline: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.booking-form form .booking-input-top input:hover {
+  background-color: #bc6c25;
+  color: #fff;
+}
+
+.booking-form form .booking-input-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.booking-form form .booking-input-bottom input {
+  width: 424px;
+  height: 50px;
+  padding: 12px;
+  border: 1px solid #717275;
+  outline: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+}
+
+.booking-form form .booking-input-bottom input:hover {
+  background-color: #bc6c25;
+  color: #fff;
+}
+
+.booking-form form .booking-input-bottom textarea {
+  width: 424px;
+  height: 100px;
+  padding: 12px;
+  border: 1px solid #717275;
+  outline: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  resize: none;
+}
+
+.booking-form form .booking-input-bottom textarea:hover {
+  background-color: #bc6c25;
+  color: #fff;
+}
+
+
+.booking-form form ::placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.booking-form form button {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: #bc6c25;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.booking-form form button:hover {
+  background-color: #fff;
+  color: #bc6c25;
+}
+
+.reservation .booking-form-image {
+  width: 40%;
+  height: 100%;
+  background-image: url('https://www.tooplate.com/templates/2137_barista_cafe/images/barman-with-fruits.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* FOOOTER */
+.footer{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bc6c25;
+}
+.footer .container{
+  width: 100%;
+  display: flex;
+  gap:2rem;
+  color:#fff;
+
+}
+.footer .container em, p{
+  font-size:14px;
+  font-weight:100;
+}
+.container .right-content{
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+
+}
+
+
+.right-content .social-media{
+  display: flex;
+  gap:2rem;
+  align-items: center;
+  color:#fff;
+}
+
+.right-content .social-media a{
+  color:#fff;
+  padding:5px 8px;
+  border-radius:50%;
+  }
+ .right-content .social-media a:hover{
+  background-color:#fff;
+  color:#bc6c25;
+  }
+  .right-content p{
+      font-size:14px;
+      font-weight:100;
+   }
+
+  .right-content p a{
+       color:rgb(235, 179, 137);
+  }
+  .right-content p a:hover{
+       text-decoration: underline;
+  }
+  .container .middle-content{
+      width:300px;
+      display:flex;
+      flex-direction: column;
+      gap:2rem;
+  }
+  .container .middle-content .info{
+      display:flex;
+      flex-direction: column;
+      gap:10px;
+  }
+  .container .middle-content .info a{
+      font-size:14px;
+      font-weight:100;
+      color:#f2f2f2;
+  }
+  .container .middle-content .info a:hover{
+      text-decoration: underline;
+  }
+
+  .container .left-content {
+      width:480px;
+      display:flex;
+      flex-direction:column;
+      gap:2rem;
+  }
+  .container .left-content .hour-list{
+      display:flex;
+      flex-direction:column;
+      gap:1rem;
+  }
+  .hour-list .underline {
+       display: inline-block;
+      width: 35%; 
+      border-bottom: 1px solid #fff;
+     margin: auto 15px 0 15px; 
+  }
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .booking-section {
+      width: 100%;
+      height: auto;
+  }
+  .container{
+    width: 100%;
+  }
+  .container .reservation {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+  }
+
+  .reservation .booking-form {
+      width: 100%;
+        border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 0;
+       overflow: hidden;
+    }
+    .title h2 {
+    font-size: 2rem;
+   }
+
+  .booking-form form .booking-input-top {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .booking-form form .booking-input-top input {
+      width: 100%;
+      height: auto;
+  }
+
+  .booking-form form .booking-input-bottom input {
+      width: 100%;
+      height: auto;
+  }
+
+  .booking-form form .booking-input-bottom textarea {
+      width: 100%;
+      height: 100px;
+    }
+    .booking-form form button {
+      width: 150px;
+      height: 50px;
+       
+    }
+
+  .reservation .booking-form-image {
+      width: 100%;
+      height: 80vh;
+       border-top-right-radius: 0;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+  }
+
+
+  /* Footer */
+     .footer{
+        width:100%;
+        height:auto;
+     }
+    .footer .container{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 2rem 0.5rem;
+    
+    }
+    .container .right-content{
+        width:100%;
+     }
+     .container .middle-content{
+        width:100%;
+     }
+     .container .left-content {
+        width:100%;
+     }
+     .hour-list li{
+        font-size:12px;
+     }
+    
+
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .booking-section {
+    width: 100%;
+    height: auto;
+}
+  .container{
+    width: 100%;
+  }
+
+.container .reservation {
+    width: 100%;
+     flex-direction: column;
+     margin-block:2rem;
+ }
+
+.reservation .booking-form {
+    width: 100%;
+    /* height: auto; */
+     border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    padding:2rem 0;
+ }.title h2 {
+  font-size: 2rem;
+ }
+
+.booking-form form .booking-input-top {
+    width: 100%;
+    flex-direction: column;
+}
+
+.booking-form form .booking-input-top input {
+    width: 100%;
+}
+
+.booking-form form .booking-input-bottom input {
+    width: 100%;
+}
+
+.booking-form form .booking-input-bottom textarea {
+    width: 100%;
+}
+.booking-form form button {
+  width: 200px;
+    
+}
+
+.reservation .booking-form-image {
+    width: 100%;
+    height: 100vh;
+      border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+/* Footer */
+   .footer{
+      width:100%;
+      height:auto;
+
+   }
+  .footer .container{
+      width: 100%;
+      height: auto;
+      display:flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+  
+  }
+  .container .right-content{
+      width:100%;
+   }
+   .container .middle-content{
+      width:100%;
+   }
+   .container .left-content {
+      width:100%;
+   }
+   .hour-list li{
+      font-size:16px;
+   }
+  
+
+
+}
+ 
+
+ 
+  
+ 
+
+ 
+
