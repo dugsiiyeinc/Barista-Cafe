@@ -1,31 +1,45 @@
-const images = ["./images/image1.jpg", "./images/image2.jpg", "./images/image3.jpg"];
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+const icon = document.getElementById('icon');
+
+menuToggle.addEventListener('click', function () {
+  menu.classList.toggle('show');
+
+  if (menu.classList.contains('show')) {
+    icon.classList.remove('fa-bars');
+    icon.classList.add('fa-xmark');
+    console.log("a")
+  } else {
+
+    icon.classList.remove('fa-xmark');
+    icon.classList.add('fa-bars');
+  }
+});
 
 
-let currentIndex = 0;
+// bg-js
+const images = [
+  // 'url("/images/baristas1.jpg")',
+  'url("/images/baristas2.jpg")',
+  'url("/images/baristas3.jpg")',
+  'url("/images/baristas4.jpg")',
+];
+images.forEach(image => {
+  const img = new Image();
+  img.src = image;
+});
 
-function setBackgroundImage() {
-  const container = document.getElementById("main-container");
-  
-  const currentImage = images[currentIndex];
-  container.style.backgroundImage = `url(${currentImage})`;
-  
-  
-  container.style.transition = 'none';
-  container.style.backgroundSize = "120% 120%";  
-  
+let index = 0;
+
+function changeBackground() {
   setTimeout(() => {
-    container.style.transition = 'background-size 6s ease-in-out';  
-    container.style.backgroundSize = "100% 100%";  
-  }, 50);  
+    document.getElementById('bg-image').style.backgroundImage = images[index];
+  }, 10); // 10 milliseconds
 
-
-  currentIndex = (currentIndex + 1) % images.length;
+  index = (index + 1) % images.length; 
 }
 
+setInterval(changeBackground, 4000);
 
-setBackgroundImage();
-
-setInterval(setBackgroundImage, 6000);
-
-
-
+changeBackground();
